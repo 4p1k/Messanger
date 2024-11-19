@@ -1,7 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+p,
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(38, 56, 69, 0.23);
+    width: 20cm;
+
 }
 
 .navbar>div {
@@ -15,7 +37,6 @@ div>img {
 
 nav>a {
     margin: 10px;
-    color: black;
     text-decoration: none;
 }
 
@@ -49,7 +70,6 @@ main>#direction>p {
 .software-AI>.right>a,
 .banking>.right>a,
 .nanotechnology>.right>a {
-    color: black;
     font-size: small;
     font-weight: bold;
     text-decoration: none;
@@ -64,7 +84,7 @@ main>#direction>p {
 .olympics>.down>a,
 .meetups>.down>a,
 .competitions>.down>a {
-    color: black;
+
     text-decoration: none;
     float: inline-end;
 }
@@ -76,14 +96,22 @@ main>#direction>p {
 }
 
 form>div>input,
-form>div>select {
+form>div>select,
+form>div>input::placeholder {
+    color: rgba(148, 176, 199, 1);
     border-radius: 5pt;
     height: 0.95cm;
+    background-color: rgba(38, 56, 69, 1);
     /* -webkit-border-radius: 5pt;
     -moz-border-radius: 5pt;
     -ms-border-radius: 5pt;
     -o-border-radius: 5pt;
  */
+}
+
+form>.down-midle>input,
+form>.down>input {
+    background-color: rgba(26, 73, 91, 1);
 }
 
 .tickets {
@@ -92,7 +120,42 @@ form>div>select {
     align-items: center;
 }
 
+
+
 .down-midle {
     display: flex;
     justify-content: space-between;
+}
+
+form>div {
+    margin: 5px;
+}
+
+.up>#action {
+    margin-left: 0.2cm;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer>.elements>div {
+    margin: 0.7cm;
+}
+
+.elements {
+    display: flex;
+}
+
+.information,
+.navigation,
+.society {
+    width: 290px;
+}
+
+.information>.up>p,
+.information>.down>p {
+    font-size: 13pt;
 }
